@@ -1,0 +1,130 @@
+/*start setup project */
+:root {
+  --blue-color: #155dfb;
+  --blue-alt-color: #0d69d5;
+  --gray-color: #364153;
+  --orange-color: #f59e0b;
+  --green-color: #00a63e;
+  --green-alt-color: #008235;
+  --red-color: #ec003f;
+  --red-alt-color: #c70036;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+}
+/* end setup project */
+/* start head */
+.head {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0;
+}
+.head h1 {
+  color: var(--blue-color);
+}
+.head p {
+  margin: 5px 0;
+  color: var(--gray-color);
+}
+/* end head */
+/* start inputs */
+input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: 0;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+input:focus {
+  background-color: #eee;
+}
+.inputs {
+  margin: 25px 0;
+}
+.inputs .price input {
+  width: 26%;
+}
+.inputs .price #total {
+  padding: 7px 3px;
+  background-color: white;
+  color: var(--red-color);
+  border-radius: 5px;
+}
+.inputs .price #total::before {
+  content: "Total:";
+}
+.inputs .btn {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs .btn button {
+  height: 35px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.6s;
+  width: 48%;
+}
+.inputs .submit {
+  background-color: var(--red-color);
+}
+.inputs .submit:hover {
+  background-color: var(--red-alt-color);
+}
+.inputs .update {
+  background-color: var(--green-color);
+}
+/* end inputs */
+/* start output */
+.output table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+th,
+td {
+  padding: 5px;
+}
+.output table th {
+  text-transform: uppercase;
+}
+.output button {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.6s;
+  padding: 5px;
+}
+.output #update {
+  background-color: var(--green-color);
+}
+.output #delete {
+  background-color: var(--blue-color);
+}
+/* end output */

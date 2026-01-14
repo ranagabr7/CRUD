@@ -1,0 +1,25 @@
+1- intro How websites work
+2- flex / position / responsive
+3- input type
+4- intro api / postman / destructing / map /filter 
+---------------------------------------------------------
+5- crud system:
+c -> create data      r -> read/reterieve data              u-> update data            d->delete data
+ex: when i do signup page create user (create data), i need display user date (read data) , 
+    change user data(update) ,admin delete user data (delete)
+------------------------------------------------------------------------------
+6- start project 
+1 Devide project into head , inputs , output
+2 first: build html & css 
+3 start js :
+     3.1- calc total price
+     3.2- create product
+     3.3- save data in local storage
+     3.4- clear inputs
+     3.5-  read/display product
+     3.6- count
+     3.7- delete
+     3.8- update
+     3.9- clean data
+
+
