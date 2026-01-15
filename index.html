@@ -20,17 +20,29 @@
           id="title"
         />
         <div class="price">
-          <input placeholder="Price" type="number" name="price" id="price" />
-          <input placeholder="Taxes" type="number" name="taxes" id="taxes" />
           <input
+            onchange="getTotalPrice()"
+            placeholder="Price"
+            type="number"
+            name="price"
+            id="price"
+          />
+          <input
+            onchange="getTotalPrice()"
+            placeholder="Taxes"
+            type="number"
+            name="taxes"
+            id="taxes"
+          />
+          <input
+            onchange="getTotalPrice()"
             placeholder="Discount"
             type="number"
             name="discount"
             id="discount"
           />
-          <span id="total"> 12333</span>
+          <span id="total"></span>
         </div>
-        <input placeholder="Count" type="number" name="count" id="count" />
         <!-- category -->
         <div class="categories-box">
           <input
@@ -50,7 +62,7 @@
 
         <div class="btn">
           <button class="submit">Create</button>
-          <button class="update">Update</button>
+          <button class="update" style="display: none">Update</button>
         </div>
       </section>
       <section class="output">
@@ -69,9 +81,10 @@
               <th>Delete</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tbody">
             <!-- dummy data -->
-            <tr>
+            <!-- tr -> row -->
+            <!-- <tr>
               <td>1</td>
               <td>samsung</td>
               <td>5000</td>
@@ -80,32 +93,17 @@
               <td>phone</td>
               <td>8000</td>
               <td>
-                <button id="update">Update</button>
+                <button class="btn1">Update</button>
               </td>
               <td>
-                <button id="delete">Delete</button>
+                <button class="btn2">Delete</button>
               </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>apple</td>
-              <td>6000</td>
-              <td>100</td>
-              <td>10</td>
-              <td>phone</td>
-              <td>89000</td>
-              <td>
-                <button id="update">Update</button>
-              </td>
-              <td>
-                <button id="delete">Delete</button>
-              </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </section>
     </main>
-    <!-- <footer>Copyright 2026</footer> -->
+    <footer>Copyright 2026</footer>
     <script src="index.js"></script>
   </body>
 </html>
