@@ -23,8 +23,9 @@ a {
 }
 body {
   background-color: #f1f5f9;
-  min-height: 100vh;
+
 }
+
 .crud {
   width: 80%;
   margin: auto;
@@ -129,9 +130,4 @@ td {
   background-color: var(--blue-color);
 }
 /* end output */
-footer {
-  background-color: var(--gray-color);
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-}
+

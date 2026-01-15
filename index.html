@@ -7,84 +7,85 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="crud">
-      <header class="head">
-        <h1>CRUD Operation</h1>
-        <p>Product management system</p>
-      </header>
-      <section class="inputs">
-        <input
-          type="text"
-          name="title"
-          placeholder="Title Product"
-          id="title"
-        />
-        <div class="price">
+  
+      <main class="crud">
+        <header class="head">
+          <h1>CRUD Operation</h1>
+          <p>Product management system</p>
+        </header>
+        <section class="inputs">
           <input
-            onchange="getTotalPrice()"
-            placeholder="Price"
-            type="number"
-            name="price"
-            id="price"
-          />
-          <input
-            onchange="getTotalPrice()"
-            placeholder="Taxes"
-            type="number"
-            name="taxes"
-            id="taxes"
-          />
-          <input
-            onchange="getTotalPrice()"
-            placeholder="Discount"
-            type="number"
-            name="discount"
-            id="discount"
-          />
-          <span id="total"></span>
-        </div>
-        <!-- category -->
-        <div class="categories-box">
-          <input
-            placeholder="Category"
             type="text"
-            name="category"
-            id="category"
-            list="categories"
+            name="title"
+            placeholder="Title Product"
+            id="title"
           />
-          <!-- datalist-> link option with input using list -->
-          <datalist id="categories">
-            <option value="TV" />
-            <option value="Phone" />
-            <option value="Screens" />
-          </datalist>
-        </div>
+          <div class="price">
+            <input
+              onchange="getTotalPrice()"
+              placeholder="Price"
+              type="number"
+              name="price"
+              id="price"
+            />
+            <input
+              onchange="getTotalPrice()"
+              placeholder="Taxes"
+              type="number"
+              name="taxes"
+              id="taxes"
+            />
+            <input
+              onchange="getTotalPrice()"
+              placeholder="Discount"
+              type="number"
+              name="discount"
+              id="discount"
+            />
+            <span id="total"></span>
+          </div>
+          <!-- category -->
+          <div class="categories-box">
+            <input
+              placeholder="Category"
+              type="text"
+              name="category"
+              id="category"
+              list="categories"
+            />
+            <!-- datalist-> link option with input using list -->
+            <datalist id="categories">
+              <option value="TV" />
+              <option value="Phone" />
+              <option value="Screens" />
+            </datalist>
+          </div>
 
-        <div class="btn">
-          <button class="submit">Create</button>
-          <button class="update" style="display: none">Update</button>
-        </div>
-      </section>
-      <section class="output">
-        <table>
-          <!-- row -->
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Taxes</th>
-              <th>Discount</th>
-              <th>Category</th>
-              <th>Total</th>
-              <th>Update</th>
-              <th>Delete</th>
-            </tr>
-          </thead>
-          <tbody id="tbody">
-            <!-- dummy data -->
-            <!-- tr -> row -->
-            <!-- <tr>
+          <div class="btn">
+            <button class="submit">Create</button>
+            <button class="update" style="display: none">Update</button>
+          </div>
+        </section>
+        <section class="output">
+          <table>
+            <!-- row -->
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Discount</th>
+                <th>Category</th>
+                <th>Total</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- dummy data -->
+              <!-- tr -> row -->
+              <!-- <tr>
               <td>1</td>
               <td>samsung</td>
               <td>5000</td>
@@ -99,11 +100,12 @@
                 <button class="btn2">Delete</button>
               </td>
             </tr> -->
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <footer>Copyright 2026</footer>
+            </tbody>
+          </table>
+        </section>
+      </main>
+     
+  
     <script src="./index.js"></script>
   </body>
 </html>
