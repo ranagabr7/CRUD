@@ -69,7 +69,7 @@ input:focus {
 .inputs .price #total {
   padding: 7px 3px;
   background-color: white;
-  color: var(--red-color);
+  color: var(--gray-color);
   border-radius: 5px;
   font-weight: bold;
 }
