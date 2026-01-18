@@ -42,6 +42,13 @@ function getTotalPrice() {
 // the best way to save data -> array (add/loop/delet/edit)
 // object -> related data stored together in one place
 submit.addEventListener("click", function () {
+  if (
+    title.value === "" ||
+    taxes.value === "" ||
+    category.value === "" ||
+    price.value === ""
+  )
+    return;
   let product = {
     title: title.value,
     price: price.value,
